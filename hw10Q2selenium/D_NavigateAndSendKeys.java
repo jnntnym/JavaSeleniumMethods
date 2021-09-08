@@ -20,7 +20,7 @@ WebDriver driver;
 	}
 	
 	@Test (enabled= true, priority=1)
-	public void navigate() {
+	public void navigateto() {
 		driver.navigate().to("https://www.facebook.com/");
 		
 	}
@@ -32,6 +32,13 @@ WebDriver driver;
 		driver.findElement(By.xpath("//button[@name='login']")).click(); 
 		
 	}
+	
+	@Test (enabled= true, priority=3)
+	public void navigateback() {
+		driver.navigate().back();
+		driver.navigate().refresh();
+	}
+	
 	
 	@AfterTest
 	public void tearUp() {
