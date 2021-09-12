@@ -30,7 +30,6 @@ WebDriver driver;
 		driver.findElement(By.xpath("//input[@placeholder='Email or Phone Number']")).sendKeys("abc123@gmail.com"); 
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("Nayeem123#"); 
 		driver.findElement(By.xpath("//button[@name='login']")).click(); 
-		
 	}
 	
 	@Test (enabled= true, priority=3)
@@ -38,7 +37,6 @@ WebDriver driver;
 		driver.navigate().back();
 		driver.navigate().refresh();
 	}
-	
 	
 	@AfterTest
 	public void tearUp() {
